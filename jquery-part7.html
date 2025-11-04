@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Theme Showcase</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #themePage {
+      background-color: #e6f7ff;
+    }
+
+    .ui-header .ui-title {
+      font-size: 26px !important;
+      color: #0077b6;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #6a1b9a;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    h4 {
+      color: #333;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .btn-style {
+      background-color: #f5a623 !important;
+      color: white !important;
+      border-radius: 10px !important;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn-theme-b {
+      background-color: #6a5acd !important;
+      color: white !important;
+    }
+
+    .btn-theme-a {
+      background-color: #ff69b4 !important;
+      color: white !important;
+    }
+
+    .ui-footer {
+      background-color: #cce5ff !important;
+      color: #003366 !important;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div data-role="page" id="themePage">
+
+    <div data-role="header">
+      <h1>Theme Showcase</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Styled Buttons</h2>
+      <a href="#" class="btn-style ui-btn ui-btn-inline">Button 1</a>
+      <a href="#" class="btn-style ui-btn ui-btn-inline">Button 2</a>
+
+      <h4>Buttons with Icons</h4>
+      <a href="#" class="btn-style ui-btn ui-btn-inline ui-icon-user ui-btn-icon-left">User</a>
+      <a href="#" class="btn-style ui-btn ui-btn-inline ui-icon-video ui-btn-icon-left">Video</a>
+
+      <h4>Buttons with Themes</h4>
+      <a href="#" class="btn-theme-b ui-btn ui-btn-inline">Theme B</a>
+      <a href="#" class="btn-theme-a ui-btn ui-btn-inline">Theme A</a>
+    </div>
+
+    <div class="ui-footer" data-role="footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

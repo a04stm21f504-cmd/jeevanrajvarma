@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Media Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    .custom-page {
+      background-color: #e0f7fa !important;
+    }
+
+    .custom-header {
+      background-color: #006064 !important;
+      color: white !important;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .custom-footer {
+      background-color: #004d40 !important;
+      color: white !important;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+    h2 {
+      color: #00796b;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .custom-list a {
+      color: #004d40 !important;
+      font-weight: bold;
+    }
+
+    .custom-list a:hover {
+      background-color: #80cbc4 !important;
+      color: #ffffff !important;
+    }
+
+    .custom-btn {
+      background-color: #00838f !important;
+      color: white !important;
+      border-radius: 10px !important;
+      padding: 10px 20px !important;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Homepage -->
+  <div data-role="page" id="homePage" class="custom-page">
+
+    <div data-role="header" class="custom-header">
+      <h1>Media Hub</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Select a Category</h2>
+      <ul data-role="listview" class="custom-list">
+        <li data-icon="video"><a href="#videoPage" data-transition="turn">Videos</a></li>
+        <li data-icon="audio"><a href="#audioPage" data-transition="slidedown">Audios</a></li>
+        <li data-icon="grid"><a href="#">Pictures</a></li>
+      </ul>
+    </div>
+
+    <div data-role="footer" class="custom-footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+  <!-- Videos Page -->
+  <div data-role="page" id="videoPage" class="custom-page">
+
+    <div data-role="header" class="custom-header">
+      <h1>Videos Panel</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Welcome to Video Centre</h2>
+      <a href="#homePage" class="custom-btn" data-transition="flow">Back</a>
+    </div>
+
+    <div data-role="footer" class="custom-footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+  <!-- Audio Page -->
+  <div data-role="page" id="audioPage" class="custom-page">
+
+    <div data-role="header" class="custom-header">
+      <h1>Audio Panel</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <h2>Welcome to Audio Centre</h2>
+      <a href="#homePage" class="custom-btn" data-transition="slidefade">Back</a>
+    </div>
+
+    <div data-role="footer" class="custom-footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

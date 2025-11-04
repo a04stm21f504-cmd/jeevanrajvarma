@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mobile Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      background-color: #fffbea;
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    .header-style {
+      background-color: #2e8b57 !important;
+      color: #ffffff !important;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 3px solid #246b45;
+    }
+
+    .footer-style {
+      background-color: #f4a460 !important;
+      color: #3b2f2f !important;
+      padding: 10px;
+      text-align: center;
+      border-top: 2px solid #d38b5f;
+    }
+
+    .nav-button {
+      background-color: #ff7f50 !important;
+      color: white !important;
+      border-radius: 6px !important;
+      margin: 10px 0 !important;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+    }
+
+    .nav-button:hover {
+      background-color: #ffa07a !important;
+    }
+
+    .main-content {
+      padding: 20px;
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="homePage">
+
+    <div class="header-style" data-role="header">
+      <h1>My Mobile Project</h1>
+    </div>
+
+    <div class="main-content" data-role="main" class="ui-content">
+      <h3>Home</h3>
+      <p>This is the homepage of my jQuery Mobile project. It’s designed to be simple and responsive for mobile users. Click below to learn more.</p>
+      <a href="#aboutPage" class="nav-button">Learn More</a>
+    </div>
+
+    <div class="footer-style" data-role="footer">
+      <h4>Created by Jeevanraj | DIT4A</h4>
+    </div>
+
+  </div>
+
+  <!-- About Page -->
+  <div data-role="page" id="aboutPage">
+
+    <div class="header-style" data-role="header">
+      <h1>About This App</h1>
+    </div>
+
+    <div class="main-content" data-role="main" class="ui-content">
+      <h3>About</h3>
+      <p>This mobile web app was built using jQuery Mobile. It demonstrates basic navigation, styling, and layout techniques suitable for student projects.</p>
+      <a href="#homePage" class="nav-button">Back to Home</a>
+    </div>
+
+    <div class="footer-style" data-role="footer">
+      <h4>Created by Jeevanraj | DIT4A</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>

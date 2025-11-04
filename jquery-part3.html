@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Web Setup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    body {
+      background-color: #fffaf0;
+      font-family: 'Verdana', sans-serif;
+    }
+
+    .header-box {
+      background-color: #4682b4 !important;
+      color: white !important;
+      text-align: center;
+      padding: 12px;
+      border-bottom: 2px solid #2f4f4f;
+    }
+
+    .footer-box {
+      background-color: #f4a460 !important;
+      color: #3b2f2f !important;
+      text-align: center;
+      padding: 10px;
+      border-top: 2px solid #d38b5f;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff7f50;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      background-color: #ffa07a;
+    }
+
+    .content-area {
+      padding: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="homePage">
+
+    <div class="header-box" data-role="header">
+      <h1>My Mobile Homepage</h1>
+    </div>
+
+    <div class="content-area" data-role="main" class="ui-content">
+      <h4>Welcome to the Homepage</h4>
+      <p>This is a simple mobile-friendly layout using jQuery Mobile. Click below to visit the About page.</p>
+      <a href="#aboutPage" class="nav-link">Go to About</a>
+    </div>
+
+    <div class="footer-box" data-role="footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+  <!-- About Page -->
+  <div data-role="page" id="aboutPage">
+
+    <div class="header-box" data-role="header">
+      <h1>About This Page</h1>
+    </div>
+
+    <div class="content-area" data-role="main" class="ui-content">
+      <h4>Welcome to the About Page</h4>
+      <p>This page explains the purpose of the mobile web project. It uses jQuery Mobile for easy navigation and styling.</p>
+      <a href="#homePage" class="nav-link">Back to Home</a>
+    </div>
+
+    <div class="footer-box" data-role="footer" data-position="fixed">
+      <h4>© Jeevanraj DIT4A</h4>
+    </div>
+
+  </div>
+
+</body>
+</html>
